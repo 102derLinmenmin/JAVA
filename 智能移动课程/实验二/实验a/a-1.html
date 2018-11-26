@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>音乐播放器</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* body{
+            background: url(网页背景.jpg);
+            height: 100%;
+            opacity: 0.8;
+            vertical-align: middle;
+        } */
+        div.main{
+            text-align: center;
+            position: relative;
+            width: 1720px;
+            height: 720px;
+            overflow: hidden;
+            margin: auto;
+        }
+        audio{
+            position: absolute;
+            left: 50%;
+            margin-left: -250px;
+            bottom: 50%;
+        }
+        img{
+            width: 1720px;
+            height: 100%;
+            opacity: 0.5;
+            vertical-align: middle;
+        }
+        div.lyrics{
+            position: absolute;
+            right: 180px;
+            top: 50%;
+            margin-top: -200px;
+            overflow: auto;
+            width: 300px;
+            height: 400px;
+            background-color: rgba(0,0,0,0.3);
+            color: #fff;
+            font-size: 14px;
+            line-height: 31px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <img src="网页背景.jpg" alt="">
+    <audio controls="controls">
+        <source src="林奕匡-难得一遇.mp3" />  
+        您的浏览器不支援audio播放模式!
+    </audio>
+    <br />
+    <div class="lyrics">
+        <p>
+            难得一遇 - 林奕匡<br>
+            词：陈咏谦<br>
+            曲：林奕匡<br>
+            编曲：Edward Chan;Nick Wong<br>
+            监制：Edward Chan<br>
+            万万对情侣 避不过巨轮<br>
+            仍然我带你前进<br>
+            天要挡我 带着你开新路<br>
+            力量是你我都相信<br>
+            如天注定我们 走到尽头<br>
+            用力撞坏那天门 亲手自救<br>
+            难得这段爱情 能捱这么久<br>
+            如何会放得低你<br>
+            要认命 太荒谬<br>
+            明明就是我的人 守到白头<br>
+            为着你我只怕捐躯都不够<br>
+            穷一生之力 凭一句诺言<br>
+            必须挽着手<br>
+            现在我能够 立于你面前<br>
+            全凭你带领我回转<br>
+            不止一次 我士气很低落<br>
+            幸运在你决不走远<br>
+            如天注定我们 走到尽头<br>
+            用力撞坏那天门 亲手自救<br>
+            难得这段爱情 能捱这么久<br>
+            尤其遇见你之后<br>
+            仿佛我灵魂被掳走<br>
+            相爱令我忘忧<br>
+            从而为你分忧<br>
+            准我用一生挽着你手<br>
+            直冲开最难过关口<br>
+            明明就是我的人<br>
+            默默报答你的情<br>
+            当你从来没怨<br>
+            能捱这么久<br>
+            如何会放得低你<br>
+            你现在太屈就<br>
+            明晨就是我的人 守到白头<br>
+            为着你我所有艰苦都接受<br>
+            穷一生之力 凭一句诺言<br>
+            必须挽着手<br>
+            终生不渝 天塌下来<br>
+            只须挽着手<br>
+        </p>  
+    </div>
+</div>
+</body>
+</html>

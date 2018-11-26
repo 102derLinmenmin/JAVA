@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lovely Girl,做自己的宠儿</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/times.css">
+	<style>
+			
+			.nav {
+				width: 800px;
+				height: 42px;
+				
+				border-radius: 8px;
+			
+			}
+			ul {
+				list-style: none;
+			
+			}
+			li {
+				float: left;
+				width: 83px;
+				height: 42px;
+				text-align: center;
+				font: 500 16px/42px "simsun";
+				cursor: pointer;
+			}
+			span {
+				position: absolute;
+				left: 83px;
+				top: 0;
+				width: 83px;
+				height: 42px;
+				background: url("images/yun.png") no-repeat;
+			}
+		</style>
+		<script>
+			window.onload = function () {
+				//需求1：鼠标放到哪个li上面，span对应移动到该li上。移开后，回到原位置。
+				//需求2：鼠标点击那个li记录该li标签，移开的时候span回到该记录的li标签上。
+				//步骤：
+				//1.老三步
+				//2.计数器
+	
+	
+				//需求1：鼠标放到哪个li上面，span对应移动到该li上。移开后，回到原位置。
+				//1.老三步
+				var liArr = document.getElementsByTagName("li");
+				var liWidth = liArr[0].offsetWidth;
+				var span = document.getElementsByTagName("span")[0];
+				//计数器
+				var count = 0;
+	
+	
+				//for循环绑定事件
+				for(var i=0;i<liArr.length;i++){
+					//自定义属性，然后绑定index属性为索引值
+					liArr[i].index = i;
+					//鼠标进入事件
+					liArr[i].onmouseover = function () {
+						//让span运动到该li的索引值位置
+						//图片运动需要封装的方法
+						animate(span,this.index*liWidth);
+					}
+					//鼠标移开
+					liArr[i].onmouseout = function () {
+						//让span运动到该li的索引值位置
+						//图片运动需要封装的方法
+						animate(span,count*liWidth);
+					}
+					//点击事件，记录功能
+					liArr[i].onclick = function () {
+						//需要一个计数器，每次点击以后把所以只记录下来
+						//因为onmouseout事件要用到这个计数器，所以应该是一个全局变量
+						count = this.index;
+						animate(span,count*liWidth);
+					}
+	
+				}
+	
+				//缓动动画封装
+				function animate(ele,target) {
+					clearInterval(ele.timer);
+					ele.timer = setInterval(function () {
+						var step = (target-ele.offsetLeft)/10;
+						step = step>0?Math.ceil(step):Math.floor(step);
+						ele.style.left = ele.offsetLeft + step + "px";
+						console.log(1);
+						if(Math.abs(target-ele.offsetLeft)<Math.abs(step)){
+							ele.style.left = target + "px";
+							clearInterval(ele.timer);
+						}
+					},18);
+				}
+			}
+		</script>
+	
+</head>
+<body>
+	<img class="picture" src="images/bg2.jpg">
+
+	<div class="nav">
+	
+			<span></span>
+			<ul>
+				<li><a href="#">少女专区</a></li>
+				<li><a href="#">可爱</a></li>
+				<li><a href="#">活力</a></li>
+				<li><a href="#">青春</a></li>
+				<li><img src="images/logo1.png"></li>
+			</ul>
+			
+	</div>
+	
+
+	<div class="box">
+		<div class="left">
+			
+			<h2 style="margin-top: 20px;">你是人间的四月天</h2>    
+			<p>我说你是人间的四月天；</p>
+			<p>笑响点亮了四面风；轻灵</p>
+            <p>在春的光艳中交舞着变。</p>
+			<p>你是四月早天里的云烟，</p>
+            <p>黄昏吹着风的软，星子在</p>
+			<p>无意中闪，细雨点洒在花前。</p>
+		    <p>那轻，那娉婷你是，鲜妍</p>
+		    <p>百花的冠冕你戴着，你是</p>    
+		    <p>天真，庄严，你是夜夜的月圆。</p>    
+		    <p>雪化后那片鹅黄，你像；新鲜</p>    
+		    <p>初放芽的绿，你是；柔嫩喜悦</p>    
+		    <p>水光浮动着你梦期待中白莲。</p>    
+		    <p>你是一树一树的花开，是燕</p>    
+		    <p>在梁间呢喃，——你是爱，是暖，</p>    
+		    <p>是希望，你是人间的四月天！</p>
+		</div>
+
+
+		<div class="clear">
+		</div>
+	</div>
+
+	<div class="time"></div>
+
+	<script type="text/javascript" src="js/jq.min.js"></script>
+	<script type="text/javascript" src="js/nav.js"></script>
+	<script type="text/javascript" src="js/times.js"></script>
+</body>
+</html>

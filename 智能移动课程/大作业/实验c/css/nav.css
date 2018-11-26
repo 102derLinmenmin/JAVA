@@ -1,0 +1,205 @@
+.nav{
+	width: 100%;
+}
+
+.nav-box{
+	padding:10px 20px;
+}
+
+.nav-box ul li{
+	float: left;
+	margin-right: 20px;
+	position: relative;
+}
+
+.nav-box ul li a{
+	display: block;
+	font-family: '微软雅黑';
+	font-size: 16px;
+	line-height: 34px;
+	color: #000;
+	padding:0 5px;
+}
+
+.nav-box ul li ul{
+	position: absolute;
+	left:-120px;
+	background-color: #fff;
+	box-shadow: 1px 1px 5px rgba(128,128,128,.3);
+	z-index: 10;
+	width:90px;
+	opacity: 0;
+}
+
+.nav-box ul li ul li{
+	padding: 0 5px;
+	width: 80px;
+}
+
+.nav-box ul li ul li:hover{
+	background-color: pink;
+}
+
+.nav-box ul li a img{
+	width: 10px;
+	margin-left: 5px;
+}
+
+.nav-box .sign{
+	float: right;
+}
+
+.nav-box .sign input,.nav-box .search input[type="button"]{
+	width:55px;
+	line-height: 34px;
+	background-color: #f3f3f3;
+	text-align: center;
+	border:0;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.nav-box .sign input:first-child,.nav-box .search input[type="button"]:nth-child(3){
+	background-color: #ff4b98;
+	color: #fff;
+	margin-right: 10px;
+}
+
+.nav-box .search input[type="button"]:nth-child(3){
+	margin-left:30px;
+}
+
+.nav-box .search{
+	float: right;
+	padding-top: 5px;
+
+}
+
+.nav-box .search input[type="text"]{
+	line-height: 30px;
+	font-size: 14px;
+	border:1px solid #ddd;
+	border-right:0;
+	padding:0 5px;
+	font-family: '微软雅黑';
+	background-color: rgba(255,255,255,.5);
+}
+
+.nav-box .search button{
+	background-color: rgba(255,255,255,.5);
+	border:1px solid #ddd;
+	border-left: 0;
+	line-height: 30px;
+	padding:0 5px;
+	position: relative;
+	left: -4px;
+	cursor: pointer;
+}
+
+.nav-box .search button img{
+	position: relative;
+	top: 3px;
+}
+
+.form{
+	background-color: #333;
+	padding:20px 0;
+	margin-top: 40px;
+}
+
+.form form{
+	width:600px;
+	margin:0 auto;
+	color: #fff;
+	font-size: 14px;
+}
+
+.form form label{
+	width: 45%;
+	float: left;
+}
+
+.form form label span{
+	padding-bottom: 10px;
+	padding-right: 5px;
+}
+
+.form form label input{
+	border:0;
+	line-height: 20px;
+	font-size: 14px;
+	padding:0 3px;
+}
+
+.form form [type="button"]{
+	font-size: 14px;
+	border:0;
+	background-color: #575ee7;
+	color: #fff;
+	padding:0 10px;
+	line-height: 22px;
+	font-family: '微软雅黑';
+	cursor: pointer;
+}
+
+.footer{
+	padding-bottom: 15px;
+	background-color: #333;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+}
+
+.dask{
+	position: absolute;
+	background-color: rgba(0,0,0,.5);
+	width: 100%;
+	left:0;
+	top:0;
+	z-index: 100;
+}
+
+.message{
+	position: fixed;
+	left:50%;
+	background-color: #fff;
+	border-radius: 10px;
+	top:50%;
+	width: 220px;
+	padding:10px 20px;
+	margin-left: -120px;
+	margin-top: -80px;
+	opacity: 0;
+	z-index: 1000;
+}
+
+.message table tr td{
+	line-height: 30px;
+	font-size: 14px;
+}
+
+.message table tr td:last-child{
+	padding-left: 10px;
+}
+
+.message p{
+	text-align: center;
+}
+
+.message p img{
+	margin-right: 5px;
+}
+
+.message p span{
+	position: relative;
+	top:-10px;
+	font-size: 14px;
+}
+
+.close{
+	float: right;
+	position: relative;
+	right:-8px;
+	top:-3px;
+}

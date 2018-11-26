@@ -1,0 +1,63 @@
+.bg{
+	width: 100%;
+}
+
+.nav{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.box{
+	padding:40px 0;
+	position: absolute;
+	top:40px;
+	left:50%;
+	margin-left:-285px; 
+}
+
+.box > div{
+	width:570px;
+	margin:0 auto;
+	background-color: #fff;
+}
+
+.box div div button{
+	font-size: 14px;
+	width:60px;
+	line-height: 30px;
+	border-radius: 5px;
+	border:0;
+	background-color: #ff3b98;
+	color: #fff;
+	margin-right: 10px;
+	cursor: pointer;
+	font-family: '微软雅黑';
+}
+
+.box div div button:last-child{
+	border:1px solid #999;
+	background-color: #fff;
+	color: #999;
+	line-height: 28px;
+}
+
+.box div div{
+	padding:15px 20px;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.box div img{
+	padding:15px 20px;
+	width: 530px;
+}
+
+.box div p{
+	padding: 0 20px 20px 20px;
+	font-size: 14px;
+}
+
+.form{
+	margin-top: 0;
+}

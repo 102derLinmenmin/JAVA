@@ -1,0 +1,70 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>表单页面</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <script src="city.js"></script>
+</head>
+<body onload="init()">
+    <form class="main" action="http://localhost:8080/index.php" method="POST">
+        <div class="quarter-div first">
+            <div>
+                <p>
+                    <span>真实姓名：</span>
+                    <input type="text" name="real_name" pattern="^[\u4e00-\u9fa5]{0,}$" placeholder="例如：蔡苑菲" required />
+                </p>
+                <p>
+                    <span>真实年龄：</span>
+                    <input type="number" name="real_age" value="20" min="15" max="120"  required />
+                </p>
+            </div>
+        </div>
+        <div class="quarter-div second">
+            <div>
+                <p>
+                    <span>所在地区：</span>
+                    <select name="province" id="param_province" onchange="provinChange(this.selectedIndex)">
+                    </select>
+                </p>
+                <p>
+                    <span>所在城市：</span>
+                    <select name="city" id="param_city">
+                    <option>请选择城市</option>
+                    </select>
+                </p>
+            </div>
+        </div>
+        <div class="quarter-div third">
+            <div>
+                <p>
+                    <span>手机号码：</span>
+                    <input type="tel" name="user_tel" pattern="^\d{11}$" required  />
+                </p>
+                <p>
+                <span>兴趣爱好：</span>
+                <label><input type="checkbox" name="favour[]" value="游泳" class="fa"/>游泳</label>
+                <label><input type="checkbox" name="favour[]" value="舞蹈" class="fa"/>舞蹈</label>
+                <label><input type="checkbox" name="favour[]" value="篮球" class="fa"/>篮球</label>
+                </p>
+                <p>
+                    <span>出生日期：</span>
+                    <input type="date" name="user_birthday" value="2000-01-01"  required />
+                </p>
+            </div>
+        </div>
+        <div class="quarter-div forth">
+            <div>
+                <p>
+                    <span>网友留言：</span>
+                    <textarea cols="40" rows="4" name="message"></textarea>
+                </p>
+                <p class="btn">
+                    <input type="submit" value="提交"/>
+                    <input type="reset" value="重置"/>
+                </p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

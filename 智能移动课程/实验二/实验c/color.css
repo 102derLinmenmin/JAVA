@@ -1,0 +1,138 @@
+body{
+	margin:0px;padding:100px 0 0 0;
+	font-family:Arial, Helvetica,  sans-serif,微软雅黑;
+	cursor:url(pclose1.cur),url(pclose1.png),auto;   /*改变鼠标游标*/
+	background-image: url('网页背景.jpg');   加入网页背景图         
+}
+#main{
+	margin: 0 auto;
+	border:0px #330000 solid; 
+	width:800px;
+	height:auto;
+}
+header{
+	border:1px #330000 solid;
+	width:800px;
+	height:80px;
+	background:pink;
+	-moz-border-radius: 15px 15px 0px 0px;     
+    -webkit-border-radius:15px 15px 0px 0px;  
+    border-radius:15px 15px 0px 0px;
+}
+aside{
+	border:0;
+	width:175px;
+	float: left;
+	height:400px;
+	background: url(导航栏.png) no-repeat;
+}
+nav{             /*nav区块模式*/
+	border:0px #000000 solid;
+	margin: 0px auto;padding:0 0 0 14px ;
+	margin-top:190px;
+}
+nav ul {
+	list-style:none;        /*不显示清单项目符号*/
+	margin:0;padding:0; 
+}
+
+nav li a {
+	display:block; 
+	width:150px; 
+	height:42px; 
+	background-image:url(边框.png);  /*超链接原始状态背景图*/
+	line-height:35px; 
+	text-indent:45px; 
+	text-decoration:none;    /*不显示底线*/
+	color:#333333;
+	font-size:15px;
+}
+nav li a:hover {
+	background-image:url(边框底色.png); /*鼠标移到链接时背景图*/
+	color:#ffffff; 
+}
+h1#text1{
+	margin:0px;padding:100px 0 0 0;
+	top:15px;
+	position:absolute;     /*设置div为绝对定位*/
+	font-size:35px;       /*字体大小*/
+	color:#ffffff;       /*字体颜色*/
+	margin-left:50px;          /*与原件水平距离*/
+	filter:glow(color=#330000, strength=5);   /*设置光晕滤镜*/
+	text-shadow: 5px 5px 5px #330000;
+}
+
+h1#text2{
+	margin:0px;padding:108px 0 0 0;
+	position:absolute;
+	font-size:30px;
+	color:#FFFFFF;
+	top:30px;
+	margin-left:150px;
+	filter:glow(color=#330000, strength=5);   /*设置光晕滤镜*/
+	text-shadow: 5px 5px 5px #330000;
+}
+article{
+	border-right:1px #330000 solid;
+    border-left:1px #ffffff solid; 
+	width:625px;
+	margin-left:175px;
+	height:400px;
+	background:#FFFFFF;
+}
+.consection{
+	border:0px #330000 solid;
+	width:400px;
+	left:10px;top:30px;
+	margin:0px auto;padding:20px;
+	text-align: left;
+}
+fieldset{
+	border:1px solid;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+fieldset legend{
+	text-align:center; 
+}
+img{
+	margin:3px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border:2px solid;}
+footer{
+	border:1px #330000 solid;
+	background:pink;
+	color:#ffffff;
+	width:800px;height:50px;
+	text-align:center;
+	line-height:50px;
+	-moz-border-radius: 0px 0px 15px 15px;     
+    -webkit-border-radius:0px 0px 15px 15px;  
+    border-radius:0px 0px 15px 15px;
+}
+
+p input{
+	background: pink;
+	border-radius: 10px;
+	font-size: 20px;
+	color: aliceblue
+	
+}
+
+textarea{ 
+	background: pink;
+	border-radius: 10px;
+	font-size: 20px;
+	color: aliceblue
+}
+.btn input{
+	width:150px;
+	height: 30px;
+	background: pink;
+	border-radius: 10px;
+	font-size: 20px;
+	color: aliceblue
+	}

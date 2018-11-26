@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+div.container{
+    width: 1200px;
+    margin: 50px auto 0;
+}
+.clearfix:after{
+    height: 0;
+    content: "";
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+div.logo{
+    width: 300px;
+    height: 280px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: url("7.jpg") center no-repeat;
+    background-size: 300px;
+    float: left;
+}
+div.logo:hover{
+    background-image: url("8.jpg");
+}
+div.carousel{
+    float: left;
+    position: relative;
+    margin: 0 25px;
+    border: 1px solid #ccc;
+}
+.carousel-inner{
+    width: 560px;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+}
+.carousel-inner ul{
+    width: 700%;
+    position: absolute;
+}
+.carousel-inner ul li{
+    float: left;
+}
+.carousel-inner li img{
+    width: 560px;
+}
+ul.indicators{
+    position: absolute;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    padding: 3px 5px;
+    bottom: 7px;
+    left: 50%;
+    margin-left: -41px;
+}
+.indicators li{
+    float: left;
+    width: 7px;
+    height: 7px;
+    background-color: #ffd6cf;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.carousel span{
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    top: 50%;
+    margin-top: -20px;
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+}
+span.left{
+    left: 0;
+}
+span.right{
+    right: 0;
+}
+.indicators .active{
+    background-color: #b5d0ff;
+}
+.img{
+    float: right;
+    border-radius: 10px;
+    background-color: #b5d0ff;
+}
+img{
+    border-radius: 10px;
+    vertical-align: middle;
+}
+.video{
+    clear: both;
+    width:1200px;
+    height:320px;
+    padding-top:90px;
+    text-align: center;
+    background: url("蜜汁三角梅.jpg");
+}

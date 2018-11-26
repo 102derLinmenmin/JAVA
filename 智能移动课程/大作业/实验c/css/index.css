@@ -1,0 +1,392 @@
+
+@font-face {
+	font-family: 'iconfont';
+	src: url('../font/font_o765dbrqpsn/iconfont.eot');
+	src: url('../font/font_o765dbrqpsn/iconfont.eot?#iefix') format('embedded-opentype'),
+	url('../font/font_o765dbrqpsn/iconfont.woff') format('woff'),
+	url('../font/font_o765dbrqpsn/iconfont.ttf') format('truetype'),
+	url('../font/font_o765dbrqpsn/iconfont.svg#iconfont') format('svg');
+  }
+
+  .iconfont{
+	font-family:"iconfont" !important;
+	font-size:16px;font-style:normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;
+  }
+
+.videobox{
+	width: 100%;
+	height: 680px;
+	overflow: hidden;
+	position: relative;
+}
+
+.videobox video{
+	width: 100%;
+	min-width: 1280px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.videobox header{
+	width: 100%;
+	height: 40px;
+	background: #333;
+	z-index: 999;
+	position: absolute;
+}
+
+.videobox header .con{
+	width: 1030px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+.videobox header .left{
+	width: 75px;
+	height: 20px;
+	background: url(../images/logo.png) 0 0 no-repeat;
+	margin-top: 10px;
+	float: left;
+}
+
+.videobox header .right{
+	margin-top: 10px;
+    float: right;
+}
+
+.videobox header .right a{
+	margin-right: 10px;
+}
+
+.videobox nav{
+	width:100%;
+	height: 90px;
+	background: rgba(0,0,0,.2);
+	z-index: 1000;
+	position: absolute;
+	top: 40px;
+	border-bottom: 1px solid #fff;
+}
+
+.videobox nav ul{
+	width:1030px;
+	height: 90px;
+	margin: 0 auto ;
+	position: relative;
+}
+
+.videobox nav ul li{
+	float: left;
+	margin-right: 19%;
+}
+
+.videobox nav ul .left a{
+	display: block;
+	height: 90px;
+	line-height: 90px;
+	font-size: 20px;
+	color: #999;
+}
+
+.videobox nav ul .left a img{
+	vertical-align: middle;
+}
+
+.videobox nav ul .left a span {
+	margin: 0 10px;
+}
+
+.videobox aside{
+	display: none;
+	width: 380px;
+	height: 560px;
+	background: rgba(0,0,0,.3);
+	position: absolute;
+	left: 0;
+	top: 90px;
+	color: #fff;
+}
+
+.videobox nav ul .left:hover aside{
+	display: block;
+}
+
+.videobox aside span{
+	width: 20px;
+	height: 14px;
+	/* background: url(../images/per.p) 0 0 no-repeat; */
+	position: absolute;
+	left: 50px;
+	top: 0;
+}
+
+.videobox aside ol{
+	width: 155px;
+	float: left;
+}
+
+.videobox aside ol li{
+	width: 155px;
+	height: 25px;
+	line-height: 25px;
+	cursor: pointer;
+	font-family: "宋体";
+}
+
+.videobox aside ol li .con{
+	font-size: 16px;
+	text-indent: 0;
+	font-family: "微软雅黑";
+	padding: 10px 0;
+}
+
+.videobox aside ol li:hover{
+	color: #fff;
+}
+
+.videobox aside .zuo{
+	margin: 35px 0 0 68px;
+}
+
+.videobox aside .you{
+	margin-top: 35px ;
+}
+
+.videobox aside img{
+	margin: 10px 0 0 13px;
+}
+
+.videobox nav ul .center{
+	margin-top: 32px;
+}
+
+.videobox nav ul .center input{
+	width: 240px;
+	height: 30px;
+	border: 1px solid #fff;
+	border-radius: 15px;
+	color: #fff;
+	line-height: 32px;
+	background: rgba(0,0,0,0);
+	padding-left: 30px;
+	box-sizing: border-box;
+	background: url(../images/search.png) no-repeat 3px 3px;
+}
+
+.videobox nav ul .right{
+	margin-top: 32px;
+
+	width: 280px;
+	height: 32px;
+	margin-right: 0;
+	text-align: center;
+	line-height: 32px;
+	font-size: 16px;
+	font-family: iconfont;
+}
+
+.videobox nav ul .right a{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	color: #fff;
+	box-shadow: 0 0 0 1px #fff inset;
+	transition: box-shadow 0.3s ease 0s;
+	border-radius: 16px;
+    margin-left: 30px;
+}
+
+.videobox nav ul .right a:hover{
+	box-shadow: 0 0 0 16px #fff inset;
+	color: #C1DCC5;
+}
+
+.videobox .pic{
+	width: 570px;
+	height: 210px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	/* background: url(../images/per.png) no-repeat; */
+	text-align: center;
+}
+
+.videobox .pic p{
+	margin-top: 240px;
+	color: #4c8174;
+}
+
+.videobox .pic ul{
+	position: absolute;
+	color: #999;
+}
+
+.videobox .pic ul li{
+	width: 180px;
+	height: 56px;
+	border-radius: 28px;
+	background: #fff;
+	text-align: left;
+}
+
+.videobox .pic ul .one{
+	line-height: 56px;
+	position: absolute;
+	left: -1920px;
+	top: 40px;
+	opacity: 0;
+	transition: all 2s ease-in 0s;
+}
+
+.videobox .pic ul .two{
+	line-height: 56px;
+	position: absolute;
+	left: 1920px;
+	top: 40px;
+	opacity: 0;
+	transition: all 2s ease-in 0s;
+}
+
+body:hover .videobox .pic ul .one{
+	position: absolute;
+	left: 100px;
+	top: 40px;
+	opacity: 0.8;
+}
+
+body:hover .videobox .pic ul .two{
+	position: absolute;
+	left: 300px;
+	top: 40px;
+	opacity: 0.8;
+}
+
+.videobox .pic ul .one span,.videobox .pic ul .two span{
+	float: left;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 20px;
+	margin: 8px 10px 0 10px;
+	box-shadow: 0 0 0 1px #90c197 inset;
+	transition: box-shadow 0.3s ease 0s;
+	font-weight: bold;
+	font-family: iconfont;
+	color: #90c197;
+}
+
+.videobox .pic ul .two span{
+	margin: 8px 30px 0 10px;
+}
+
+.videobox .pic ul .one:hover span,.videobox .pic ul .two:hover span{
+	box-shadow: 0 0 0 20px #90c197 inset;
+	color: #fff;
+}
+
+.recommend-box{
+	padding: 20px 0 10px 0;
+	width:1000px;
+	margin:0 auto;
+}
+
+.recommend-box > div{
+	position: relative;
+	padding:20px 0;
+    text-align: center;
+}
+
+.recommend-box > div:before,.recommend-box > div:after{
+	display: block;
+    position: absolute;
+    width: 44%;
+    top: 28px;
+    content: "";
+    border-top: 1px solid #ededed;
+}
+
+.recommend-box > div:before{
+	left: 0;
+}
+
+.recommend-box > div:after{
+	right: 0;
+}
+
+.recommend-box a{
+	display: inline-block;
+	font-size: 16px;
+	color: #999;
+}
+
+.detail{
+	width:1000px;
+	margin:0 auto;
+}
+
+.detail .detail-box{
+	width:230px;
+	border:1px solid #ddd;
+	margin-bottom: 18px;
+}
+
+.detail .clumn{
+	float: left;
+	padding: 0 9px;
+}
+
+.detail .clumn:nth-child(4){
+	margin-top: -11px;
+}
+
+.detail .detail-box img{
+	width:100%;
+}
+
+.detail .detail-box div{
+	padding:10px;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.detail .detail-box div span{
+	color: #999; 
+	font-size: 12px;
+	line-height: 18px;
+	margin-right: 10px;
+}
+
+.detail .detail-box .re-img{
+	position: relative;
+	padding: 0;
+}
+
+.detail .dask-box{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,.1);
+	display: none;
+}
+
+.detail .detail-box:hover .dask-box{
+	display: block;
+}
+
+.detail .detail-box .re-img a{
+	color: #fff;
+	font-size: 14px;
+	background-color: #ff4b98;
+	display: inline-block;
+	padding:3px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}

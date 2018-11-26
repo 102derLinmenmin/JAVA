@@ -1,0 +1,38 @@
+.picture{
+	width: 100%;
+}
+
+.nav{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+.box{
+	width: 1000px;
+	margin:0 auto;
+	position: absolute;
+	top:100px;
+	left:50%;
+	margin-left: -500px;
+}
+
+.box .left{
+	float: left;
+	width: 60%;
+	font-size: 16px;
+	line-height: 35px;
+	color:#fff;
+}
+
+.time{
+	font-size: 20px;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+
+.title{
+	margin-right: 40px;
+}

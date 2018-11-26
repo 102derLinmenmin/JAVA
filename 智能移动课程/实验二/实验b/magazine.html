@@ -1,0 +1,63 @@
+<!-- 实验b：制作HTML5页面 -->
+<!-- 参考16-7例子，自己做制作自己的杂志专栏页面。力争包含3个图片。 -->
+<!DOCTYPEHTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>杂志专栏</title>
+<style type="text/css">
+body {
+	border:1px solid #f90;
+	padding:10px;
+	-webkit-column-count:3;     /* 指定列的数目 */
+	-moz-column-count:3;        /* 指定列的数目 */
+    column-count:3;             /* 指定列的数目 */
+   
+}
+h1 {
+	-webkit-column-span:all;     /* 设置横跨所有列显示  */
+	-moz-column-span:all;        /* 设置横跨所有列显示  */
+	column-span:all;             /* 设置横跨所有列显示  */
+	font-size:24px;
+	margin:0;
+	padding:5px 10px;
+	background-color:#f0941b;
+	text-align:center;
+}
+h2 {
+    -webkit-column-span:all;     /* 设置横跨所有列显示  */
+	-moz-column-span:all;        /* 设置横跨所有列显示  */
+	column-span:all;             /* 设置横跨所有列显示  */
+	margin:0;
+	padding:5px 10px;
+	font-size:14px;
+	text-align:right;
+}
+p {
+	text-indent:2em;
+	font-size:12px;
+	line-height:20px;
+}
+.first:first-letter {
+	font-size:24px;             /* 突出第一个字  */
+	font-weight:bold;
+}
+.b {
+	font-weight:bold;
+}
+</style>
+</head>
+<body>
+<h1>木棉菁英学生会</h1>
+<h2>作者：memmin</h2>
+<div><img src="logo.jpg" width="300" height="auto" /></div>
+<p class="first">木棉菁英的宗旨　</p>
+<p>坚持“源于学生，服务学生”，以奋发向上的精神携手共进，以创新服务的工作理念，运用时尚的元素，新颖的载体和喜闻乐见的活动方式来吸引学生，凝聚学生和引领学生。</p>
+<div><img src="组成.png" width="280" height="auto" /></div>
+<p class="b">木棉菁英的组成</p>
+<p>由“两团七部一中心”组成；分别是主席团、艺术团，秘书部、体育部、外联部、文娱部、宣传策划部、信息技术部、学习与维权部以及新媒体中心</p>
+<div><img src="成员.jpg" width="250" height="auto" /></div>
+<p class="b">木棉菁英给我带来哪些新的影响</p>
+<p>认识一群伙伴，收获一份友谊，我们永远是木棉菁英。以奋发向上的木棉精神，携手共进！</p>
+</body>
+</html>

@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.quarter-div{
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+
+.first{
+    background:url(1.jpg);
+}
+
+.second{
+    background:url(4.jpg);
+}
+
+.third{
+    background:url(2.jpg);
+}
+
+.forth{
+    background:url(3.jpg);
+}
+
+.first div{
+    position: absolute;
+    width: 400px;
+    right: 50%;
+    bottom: 50%;
+    background-color: rgba(245, 255, 250, 0.8);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.second div{
+    position: absolute;
+    width: 400px;
+    left: 50%;
+    bottom: 50%;
+    background-color: rgba(245, 255, 250, 0.8);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.third div{
+    position: absolute;
+    width: 400px;
+    right: 50%;
+    top: 50%;
+    background-color: rgba(245, 255, 250, 0.8);
+    padding-bottom: 38px;
+    padding-top: 10px;
+}
+
+.forth div{
+    position: absolute;
+    width: 400px;
+    left: 50%;
+    top:50%;
+    background-color: rgba(245, 255, 250, 0.8);
+    padding-bottom: 20px;
+}
+
+p{
+    padding-top: 20px;
+}
+
+p span{
+    width: 120px;
+    display: inline-block;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 16px;
+    color: #152C32;
+   
+}
+
+p input{
+    width:200px;
+    height: 20px;
+    border:1px solid #38a1bf;
+    padding: 2px;
+}
+
+.fa{
+    width: 35px;
+}
+
+.btn input{
+    width:65px;
+    height: 28px;
+    background: rgb(75, 172, 202);
+    margin-left: 55px;
+    border-radius: 3px;
+    font-size: 15px;
+    color: aliceblue;
+}
+
+.btn{
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+textarea{
+    margin-left: 40px;
+    margin-top: 10px;
+}
