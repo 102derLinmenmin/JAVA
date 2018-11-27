@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1515854122 source:c:\users\hy\desktop\avl\main.cpp
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+

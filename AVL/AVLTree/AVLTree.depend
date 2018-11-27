@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1515834026 source:c:\users\hy\desktop\avl\avltree\main.cpp
+	<iostream>
+	<stdio.h>
+	<cstdlib>
+	"AVL.h"
+
+1515834975 c:\users\hy\desktop\avl\avltree\avl.h
+
+1515831604 source:c:\users\hy\desktop\avl\avl.hpp
+	<stdio.h>
+	<stdio.h>
+	<stdlib.h>
+
+1515833292 source:c:\users\hy\desktop\avl\avltree\avl.hpp
+	<stdio.h>
+	<stdio.h>
+	<stdlib.h>
+
+1515833791 source:c:\users\hy\desktop\avl\avltree\avl.h
+
+1515834604 source:c:\users\hy\desktop\avl\avltree\avl.cpp
+	"AVL.h"
+	<stdio.h>
+	<stdlib.h>
+
